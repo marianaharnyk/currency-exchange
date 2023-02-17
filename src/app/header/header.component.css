@@ -1,0 +1,134 @@
+.background {
+    background-image: url(../../assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 12% 50%;
+    min-height: 650px;
+}
+
+.main-info {
+    margin: auto;
+    padding-top: 130px;
+    max-width: 432px;
+}
+
+.main-info__title {
+    font-family: var(--primary-font);
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+    color: var(--main-light-color);
+}
+
+.main-info__text {
+    font-family: var(--secondary-font);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: var(--light-grey-color);
+    padding-top: 20px;
+}
+
+.daily-rate {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-light-color);
+    width: 80%;
+    max-width: 315px;
+    margin: 25px auto 0;
+    padding: 0 20px;
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.daily-rate>div:first-of-type {
+    border-bottom: 0.5px solid var(--light-grey-color);
+}
+
+.daily-rate__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.currency-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 2
+}
+
+.currency-item_arrow {
+    background-image: url(../../assets/img/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 47%;
+    flex: 1;
+}
+
+.currency-item_name {
+    flex: 3;
+}
+
+.currency-item_flag {
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex: 1;
+}
+
+.uah {
+    background-image: url(../../assets/img/currency_icons/currency_UAH.svg);
+}
+
+.usd {
+    background-image: url(../../assets/img/currency_icons/currency_USD.svg);
+}
+
+.eur {
+    background-image: url(../../assets/img/currency_icons/currency_EUR.svg);
+}
+
+.info {
+    color: var(--accent-color);
+    width: 80%;
+    margin: 2px auto;
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+@media (min-width: 550px) {
+    .main-info {
+        margin: 0 0 0 5%;
+    }
+
+    .main-info__text {
+        padding-top: 40px;
+    }
+
+    .daily-rate {
+        margin: 50px auto 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .background {
+        min-height: 800px;
+    }
+
+    .main-info {
+        padding-top: 200px;
+        max-width: 535px;
+    }
+
+    .main-info__title {
+        font-size: 52px;
+    }
+}

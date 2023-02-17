@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secondary-font: 'Fira Sans', sans-serif;
+    --primary-font: 'Ubuntu', sans-serif;
+    --main-dark-color: rgb(26, 28, 40);
+    --dark-background-color: rgba(26, 28, 40, 0.326);
+    --main-light-color: rgb(255, 255, 255);
+    --light-grey-color: rgb(207, 205, 216);
+    --light-green-color: rgb(65, 206, 103);
+    --background-grey-color: rgb(237, 237, 237);
+    --accent-color: rgb(255, 187, 17);
+    --error-red: #ff0000;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+body {
+    min-width: 375px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+}

@@ -1,0 +1,33 @@
+<header>
+    <div class="background">
+        <div class="main-info container">
+            <h1 class="main-info__title">Currency Exchange</h1>
+            <p class="main-info__text">We provide extremely fast and reliable currency exchange with zero fees</p>
+            <div class="daily-rate">
+                <div class="daily-rate__items">
+                    <div class="currency-item">
+                        <p class="currency-item_name">1 USD</p>
+                        <div class="currency-item_flag usd"></div>
+                    </div>
+                    <div class="currency-item_arrow"></div>
+                    <div class="currency-item">
+                        <p class="currency-item_name">{{UsdRate | number: '0.1-2'}} UAH</p>
+                        <div class="currency-item_flag uah"></div>
+                    </div>
+                </div>
+                <div class="daily-rate__items">
+                    <div class="currency-item">
+                        <p class="currency-item_name">1 EUR</p>
+                        <div class="currency-item_flag eur"></div>
+                    </div>
+                    <div class="currency-item_arrow"></div>
+                    <div class="currency-item">
+                        <p class="currency-item_name">{{EurRate | number: '0.1-2'}} UAH</p>
+                        <div class="currency-item_flag uah"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="info">The exchange rate is valid on {{date | date: 'MMM d, y'}}</p>
+        </div>
+    </div>
+</header>
